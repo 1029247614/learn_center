@@ -1,1 +1,16 @@
-https://www.cnblogs.com/peida/archive/2012/11/14/2769248.html
+
+find命令
+语法：find path -option [-print] [-exec -ok command] {} \;
+path : 为空字符串则使用目前路径
+常用expression:
+-munt, -xdev:只检查和指定目录在统一文件系统下的文件，避免列出其他文件系统中的文件
+-amin n: 在过去n分钟内被读取过
+-anewer file: 比文件file更晚被读取过的文件
+-atime n : 在过去n天被读取过的文件
+-ctime n : 在过去n天被修改过的文件
+-empty : 空的文件
+-name name : 文件名称符合name的文件  	iname忽略大小写
+
+
+find命令之exec：https://www.cnblogs.com/peida/archive/2012/11/14/2769248.html
+Linux命令大全：https://www.runoob.com/linux/linux-command-manual.html
