@@ -22,6 +22,7 @@ WHERE YEAR(order_date) > YEAR(NOW());
 
 -- SELECT TIME_TO_SEC('01:00') - TIME_TO_SEC('01:01')
 
+haha
 
 
 
