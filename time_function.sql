@@ -1,0 +1,27 @@
+USE store;
+
+-- 时间函数练习
+
+SELECT *
+FROM orders
+WHERE YEAR(order_date) > YEAR(NOW());
+
+-- SELECT EXTRACT(YEAR FROM NOW())
+
+-- SELECT DATE_FORMAT(now(), '%M %D %Y');
+-- SELECT DATE_FORMAT(now(), '%H:%I:%S');
+
+-- SELECT DATE_FORMAT(NOW(), '%M %D %Y');
+-- SELECT DATE_FORMAT(NOW(), '%H:%I:%S');
+
+-- SELECT DATE_ADD(NOW(), INTERVAL -1 YEAR);
+-- SELECT DATE_SUB(NOW(), INTERVAL 1 YEAR);
+
+
+-- SELECT DATEDIFF('2021-08-03 09:00', '1995-03-07 21:00');
+
+-- SELECT TIME_TO_SEC('01:00') - TIME_TO_SEC('01:01')
+
+
+
+
